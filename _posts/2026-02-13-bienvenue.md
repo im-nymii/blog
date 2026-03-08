@@ -3,14 +3,14 @@ layout: post
 title: "Welcome to my lair"
 date: 2026-02-13
 tags: [intro, about]
-author: Medusa
+author: Nymii
 ---
 
 so i finally got around to setting up this blog. been thinking about it for a while now.
 
 ## who am i?
 
-i'm Medusa. i spend way too much time breaking things (legally, of course), fixing things, creating thing. This blog is basically my notes dump but public.
+i'm Nymii. i spend way too much time breaking things (legally, of course), fixing things, creating thing. This blog is basically my notes dump but public.
 
 ## what you'll find here
 
@@ -30,15 +30,15 @@ also, writing things down helps me understand them better. if i can't explain it
 
 ## let's connect
 
-if you find something useful here, cool. if you spot a mistake, even better — hit me up on [github](https://github.com/oMedusa).
+if you find something useful here, cool. if you spot a mistake, even better — hit me up on [github](https://github.com/im-nymii).
 
 now let's get to the actual content.
 
 ```bash
 $ whoami
-medusa
+nymii
 $ pwd  
-/home/medusa/0xmedusa.dev
+/home/nymii/nymii.dev
 ```
 
 > "If it exist, we can hack it !" — me, probably

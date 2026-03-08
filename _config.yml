@@ -1,12 +1,12 @@
 # Site settings
-title: Medusa's Lab
+title: Nymii's Lab
 description: Cybersecurity articles, writeups & technical blog
-author: Medusa
+author: Nymii
 baseurl: ""
-url: "https://omedusa.github.io"
+url: "https://im-nymii.github.io"
 
 # GitHub info
-github_username: omedusa
+github_username: im-nymii
 
 # Build settings
 markdown: kramdown
@@ -37,4 +37,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Medusa"
+      author: "Nymii"

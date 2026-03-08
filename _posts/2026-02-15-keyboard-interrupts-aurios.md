@@ -3,7 +3,7 @@ layout: post
 title: "interrupts & keyboard: making AuriOS actually interactive"
 date: 2026-02-15
 tags: [osdev, interrupts, idt, keyboard]
-author: Medusa
+author: Nymii
 ---
 
 so i spent the last few days getting keyboard input working in AuriOS. turns out you can't just `scanf()` when there's no OS underneath you. who knew?
