@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My pretty tiny Write-Up for 0xFun !"
-date: 2026-02-15
+date: 2026-03-08
 tags: [hacking, ctf, pwn, web, 0xFun, sqli]
 author: Nymii
 description: "a writeup of the 0xFun CTF challenges i did. mostly web stuff with some sql injection."
