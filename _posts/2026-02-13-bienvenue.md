@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to my lair"
+title: "Welcome to my home"
 date: 2026-02-13
 tags: [intro, about]
 author: Nymii
