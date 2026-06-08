@@ -482,7 +482,12 @@ main::before {
 }
 .post:hover .post-go { transform: translateX(4px); }
 
-.post-shell .post-header { margin-bottom: 30px; }
+.post-shell .post-header { margin: 0 auto 30px; max-width: 80ch; }
+.post-shell {
+  width: min(1100px, calc(100vw - 40px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 .post-shell .post-header h1 {
   margin: 4px 0 14px;
   font-family: var(--display);
@@ -496,9 +501,10 @@ main::before {
 
 .post-body {
   color: var(--steel-l);
-  font-size: 15.5px;
-  line-height: 1.75;
-  max-width: 72ch;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 80ch;
+  margin: 0 auto;
 }
 .post-body h1, .post-body h2, .post-body h3, .post-body h4 {
   font-family: var(--display);
@@ -568,7 +574,8 @@ main::before {
   display: flex;
   justify-content: space-between;
   gap: 18px;
-  margin-top: clamp(30px, 5vw, 50px);
+  max-width: 80ch;
+  margin: clamp(30px, 5vw, 50px) auto 0;
   padding-top: 24px;
   border-top: 1px solid var(--hair);
 }
