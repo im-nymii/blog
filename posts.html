@@ -3,27 +3,29 @@ layout: default
 title: Posts
 ---
 
-<div class="wrap">
-    <div class="archive-header">
-        <h1>all posts</h1>
+<section class="block">
+    <div class="block-head">
+        <span class="block-no">Layer 02</span>
+        <h2>all posts</h2>
+        <span class="block-rule"></span>
     </div>
 
     {% if site.posts.size > 0 %}
-    <div class="posts-grid">
+    <div class="work-list">
         {% for post in site.posts %}
-        <article class="post-card">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-            {% if post.tags %}
-            <div class="tags-list">
-                {% for tag in post.tags limit:3 %}<span class="tag">{{ tag }}</span>{% endfor %}
-            </div>
-            {% endif %}
-        </article>
+        <a class="post" href="{{ post.url | relative_url }}">
+            <span class="post-meta">
+                <span class="post-date">{{ post.date | date: "%d %b %Y" | upcase }}</span>
+                {% if post.tags %}<span class="post-tags">{% for tag in post.tags limit:4 %}<span>{{ tag }}</span>{% endfor %}</span>{% endif %}
+            </span>
+            <span class="post-title">{{ post.title }}</span>
+            <span class="post-sum">{{ post.excerpt | strip_html | truncatewords: 28 }}</span>
+            <span class="post-go">read &gt;</span>
+        </a>
         {% endfor %}
     </div>
     {% else %}
-    <p style="color: var(--gray); padding: 2rem 0;">nothing yet.</p>
+    <p class="lede">nothing yet.</p>
     {% endif %}
-</div>
+</section>
+
