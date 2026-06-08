@@ -1,2 +1,2 @@
-# 0xmedusa.dev
 # nymii.dev
+cute design
