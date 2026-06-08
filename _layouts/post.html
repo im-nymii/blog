@@ -2,31 +2,35 @@
 layout: default
 ---
 
-<div class="wrap">
+<article class="block post-shell">
     <header class="post-header">
+        <div class="block-head">
+            <span class="block-no">Layer 03</span>
+            <h2>post</h2>
+            <span class="block-rule"></span>
+        </div>
         <h1>{{ page.title }}</h1>
         <div class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-            {% if page.tags %}
-            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-            {% endif %}
+            <span class="post-date">{{ page.date | date: "%d %b %Y" | upcase }}</span>
+            {% if page.tags %}<span class="post-tags">{% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}</span>{% endif %}
         </div>
     </header>
 
-    <article class="post-body">
+    <section class="post-body">
         {{ content }}
-    </article>
+    </section>
 
     <nav class="post-nav">
         {% if page.previous.url %}
-        <a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>
+        <a href="{{ page.previous.url | relative_url }}">&lt; {{ page.previous.title }}</a>
         {% else %}
         <span></span>
         {% endif %}
         {% if page.next.url %}
-        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &gt;</a>
         {% else %}
         <span></span>
         {% endif %}
     </nav>
-</div>
+</article>
+
