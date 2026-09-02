@@ -6,7 +6,7 @@ baseurl: "/blog"
 url: "https://nymii.dev"
 
 # GitHub info
-github_username: im-nymii
+github_username: NymiiTechTips
 
 # Build settings
 markdown: kramdown
