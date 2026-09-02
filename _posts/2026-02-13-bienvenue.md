@@ -30,7 +30,7 @@ also, writing things down helps me understand them better. if i can't explain it
 
 ## let's connect
 
-if you find something useful here, cool. if you spot a mistake, even better — hit me up on [github](https://github.com/im-nymii).
+if you find something useful here, cool. if you spot a mistake, even better — hit me up on [github](https://github.com/NymiiTechTips).
 
 now let's get to the actual content.
 
